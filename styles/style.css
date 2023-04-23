@@ -4,7 +4,7 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
 .header {
@@ -21,17 +21,18 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
+  align-items: flex-start;
   margin-bottom: 150px;
 }
 
 .logo {
   width: 196px;
-  margin-right: 60px;
+  height: 60px;
 }
 
 .nav__links {
   /* Reset default list styles here */
-  margin: 8px 0 0;
+  margin: 0;
   display: flex;
   align-items: center;
   column-gap: 20px;
@@ -42,7 +43,6 @@
   color: #000;
   text-decoration: none;
   font-weight: bold;
-  padding: 0;
 }
 
 .nav__link:hover {
@@ -54,6 +54,7 @@
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 .header__description {
@@ -61,6 +62,7 @@
   margin-top: 32px;
   font-size: 20px;
   line-height: 30px;
+  margin-bottom: 0;
 }
 
 .header__image {
@@ -192,14 +194,14 @@
 
 .person_name_feynman {
   /* Use correct values of top/right/bottom/left properties to position the element */
-  position: absolute;
+  /* position: absolute; */
   top: -30px;
   left: 319px;
 }
 
 .person_name_burbidge {
   /* Use correct values of top/right/bottom/left properties to position the element */
-  position: absolute;
+  /* position: absolute; */
   top: 96px;
   right: 125px;
 }
@@ -211,13 +213,13 @@
 }
 
 .person_name_mitchell {
-  position: absolute;
+  /* position: absolute; */
   bottom: 82px;
   left: 142px;
 }
 
 .person_name_tarter {
-  position: absolute;
+  /* position: absolute; */
   top: 79px;
   left: 159px;
 }
@@ -246,7 +248,7 @@
 
 .staff {
   padding: 100px 0 140px;
-  background-image: url("/images/staff_picks_background.jpg");
+  background-image: url("../images/staff_picks_background.jpg");
   background-size: cover;
 }
 
@@ -267,7 +269,14 @@
   color: #fff;
 }
 
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+.card {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 32px 40px 20px 32px;
+  box-sizing: border-box;
+  height: 420px;
+  width: 360px;
+}
 
 .staff__cards {
   max-width: 760px;
@@ -279,17 +288,6 @@
   align-content: center;
   gap: 40px;
   list-style-type: none;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 6px;
-  padding: 32px 40px 20px 32px;
-  box-sizing: border-box;
-  height: 420px;
-  width: 360px;
 }
 
 .card__content {
@@ -339,7 +337,7 @@
   padding: 0;
   margin: 100px 0 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
   gap: 40px;
@@ -400,6 +398,10 @@
   margin: 0 0 32px;
 }
 
+.about__paragraph:last-child {
+  margin: 0;
+}
+
 .about__circle {
   background-color: #2f80ed;
   width: 495px;
@@ -439,11 +441,9 @@
 }
 
 .footer__list {
-  /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
   margin: 0;
-  justify-content: center;
 }
 
 .footer__list-item {
@@ -466,8 +466,8 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  /* display: flex; */
-  /* justify-content: center; */
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 .footer__column-link:hover {
