@@ -17,10 +17,8 @@
 }
 
 .nav {
-  /* Add flex properties here */
   display: flex;
   justify-content: space-between;
-  align-content: center;
   align-items: flex-start;
   margin-bottom: 150px;
 }
@@ -31,18 +29,21 @@
 }
 
 .nav__links {
-  /* Reset default list styles here */
-  margin: 0;
+  /* Reset default list styles here - bring back the previous margins */
+  margin: 8px 0 0;
   display: flex;
   align-items: center;
   column-gap: 20px;
   list-style: none;
+  padding: 0;
 }
 
 .nav__link {
   color: #000;
   text-decoration: none;
   font-weight: bold;
+  /* margins: ;  review the brief */
+  padding: ;
 }
 
 .nav__link:hover {
@@ -54,7 +55,7 @@
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
-  margin-bottom: 0;
+  margin: 150px 0 0;
 }
 
 .header__description {
@@ -193,15 +194,11 @@
 }
 
 .person_name_feynman {
-  /* Use correct values of top/right/bottom/left properties to position the element */
-  /* position: absolute; */
   top: -30px;
   left: 319px;
 }
 
 .person_name_burbidge {
-  /* Use correct values of top/right/bottom/left properties to position the element */
-  /* position: absolute; */
   top: 96px;
   right: 125px;
 }
@@ -213,13 +210,11 @@
 }
 
 .person_name_mitchell {
-  /* position: absolute; */
   bottom: 82px;
   left: 142px;
 }
 
 .person_name_tarter {
-  /* position: absolute; */
   top: 79px;
   left: 159px;
 }
@@ -286,8 +281,11 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
-  gap: 40px;
   list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card__content {
@@ -339,7 +337,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
   gap: 40px;
   /* Add styles */
 }
